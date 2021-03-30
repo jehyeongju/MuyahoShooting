@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7561639601918681077}
   - component: {fileID: 5587436951517127292}
   - component: {fileID: 5982437486562089482}
-  m_Layer: 10
+  m_Layer: 7
   m_Name: Enemy_Croissant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
