@@ -16,9 +16,11 @@ public class Playermove : MonoBehaviour
 
     private Rigidbody2D rigid = null;
     private Vector2 targetPosition = Vector2.zero;
+    private GameManager gameManager = null;
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
+        gameManager = FindObjectOfType<GameManager>();
         StartCoroutine(Fire());
     }
 
@@ -41,5 +43,9 @@ public class Playermove : MonoBehaviour
             newBullet.transform.SetParent(null);
             yield return new WaitForSeconds(fireRate);
         }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        gameManager.Dead();
     }
 }

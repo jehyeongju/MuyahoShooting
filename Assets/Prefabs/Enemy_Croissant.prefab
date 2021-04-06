@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7561639601918681077}
   - component: {fileID: 5587436951517127292}
   - component: {fileID: 5982437486562089482}
+  - component: {fileID: 2182246524401172381}
   m_Layer: 7
   m_Name: Enemy_Croissant
   m_TagString: Untagged
@@ -151,3 +152,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2182246524401172381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8559540226282812842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 915304d530a9773498d3fcab3f250b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 2
+  speed: 5
